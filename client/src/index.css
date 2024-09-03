@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face{
+    font-family: "Regular";
+    src: local("WorkSans-Regular"),
+    url('./const/fonts/WorkSans-Regular.ttf') format("truetype");
+
+}
+
+@font-face{
+    font-family: "Medium";
+    src: local("WorkSans-Medium"),
+    url('./const/fonts/WorkSans-Medium.ttf') format("truetype");
+
+}
+
+@font-face{
+    font-family: "Bold";
+    src: local("WorkSans-Bold"),
+    url('./const/fonts/WorkSans-Bold.ttf') format("truetype");
+
+}
