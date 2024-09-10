@@ -7,14 +7,18 @@ const Product = () => {
   const [products, setProducts] = useState([]);
 
 
-  useEffect(() => {
-    fetch('http://localhost:5000/api/products')
+ useEffect(() => {
+    // Use the correct API URL based on the environment
+    const apiUrl = process.env.NODE_ENV === 'production'
+      ? 'https://codsoft-ecommerceapp.onrender.com/api/products' // Production API URL
+      : 'http://localhost:5000/api/products'; // Localhost for development
+
+    fetch(apiUrl)
       .then(response => response.json())
       .then(data => setProducts(data))
       .catch(error => console.error('Error fetching products:', error));
   }, []);
-
-  // console.log(products);
+   console.log(products);
 
   return (
     <div className='flex justify-center mt-6 w-11/12 p-8'>
