@@ -12,7 +12,7 @@ const getAllProducts = async (req, res) => {
 
 // Create a new product
 const createProduct = async (req, res) => {
-    const imageUrl = `/uploads/${req.file.filename}`.replace(/\\/g, '/');
+    const imageUrl = `/uploads/${req.file.filename}`;
     
     const product = new Product({
         name: req.body.name,
