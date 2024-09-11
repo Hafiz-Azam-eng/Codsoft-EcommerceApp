@@ -9,7 +9,7 @@ const Card = ({ product }) => {
   console.log(product);
   return (
     <div className="max-w-56 max-h-72 min-w-48 rounded overflow-hidden shadow-lg m-4">
-      <img className="max-w-48 max-h-48 p-4" src={`http://localhost:5000/${product.imageUrl}`} alt={product.name} />
+      <img className="max-w-48 max-h-48 p-4" src={`https://codsoft-ecommerceapp.onrender.com/${product.imageUrl}`} alt={product.name} />
 
       <div className="px-2 py-2">
         <div className="font-bold text-lg">{product.name}</div>
